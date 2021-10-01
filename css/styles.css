@@ -11417,7 +11417,17 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
+}
+.half_HL {
+  background: linear-gradient(to top, #2E5984 100%, transparent 100%);
+  color: white;
+}
+.tag {
+  color: #6c757d; 
+  font-style: italic; 
+  font-size: 15px;
+  margin-left: 50px;
 }
