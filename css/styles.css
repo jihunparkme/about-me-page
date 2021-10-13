@@ -11440,3 +11440,9 @@ section.resume-section .resume-section-content {
   color: #2E5984;
   text-decoration: none;
 }
+.sk_list ul li p{
+  margin-bottom: 0.5rem;
+}
+.sk_title h3 {
+  color: #6c757d;
+}
