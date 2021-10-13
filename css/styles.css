@@ -11436,3 +11436,7 @@ section.resume-section .resume-section-content {
   font-style: italic; 
   font-size: 13px;
 }
+.tag_2 a {
+  color: #2E5984;
+  text-decoration: none;
+}
