@@ -11446,3 +11446,20 @@ section.resume-section .resume-section-content {
 .sk_title h3 {
   color: #6c757d;
 }
+.icon-book {
+    color: #5C6BC0;
+}
+.book-tag {
+    color: #d3d3d3;
+    font-style: italic;
+    font-size: 13px;
+    margin-left: 50px;
+}
+.book-title {
+    display:inline-block;
+    width: 40%;
+}
+.certifications-title {
+    display:inline-block;
+    width: 20%;
+}
