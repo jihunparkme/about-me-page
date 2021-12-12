@@ -11421,9 +11421,12 @@ section.resume-section .resume-section-content {
     padding-bottom: 3rem;
   }
 }
-.half_HL {
+.higtlight-white {
   background: linear-gradient(to top, #2E5984 100%, transparent 100%);
   color: white;
+}
+.font-color-green {
+  color: #009000;
 }
 .tag {
   color: #6c757d; 
