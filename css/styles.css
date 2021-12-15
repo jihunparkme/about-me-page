@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 48, 48, 190;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -236,7 +236,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #3030BE;
   text-decoration: underline;
 }
 a:hover {
@@ -4475,17 +4475,17 @@ textarea.form-control-lg {
   color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: #808080;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #3030BE;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
+  color: #3030BE;
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #3030BE;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
@@ -7797,7 +7797,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  --bs-primary-rgb : 46, 89, 132;
+  --bs-primary-rgb : 255, 255, 255;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
@@ -11346,7 +11346,7 @@ p.lead {
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
+    /*margin: auto auto 0;*/
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
