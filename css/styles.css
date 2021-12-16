@@ -248,6 +248,14 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+a.company {
+  color: black;
+  text-decoration: underline; 
+}
+a.company:hover {
+  color: #3030BE;
+}
+
 pre,
 code,
 kbd,
@@ -11468,4 +11476,7 @@ section.resume-section .resume-section-content {
 .certifications-title {
     display:inline-block;
     width: 20%;
+}
+.color-black {
+  color: black;
 }
