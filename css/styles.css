@@ -11471,7 +11471,7 @@ section.resume-section .resume-section-content {
 }
 .book-title {
     display:inline-block;
-    width: 40%;
+    width: 50%;
 }
 .certifications-title {
     display:inline-block;
@@ -11479,4 +11479,9 @@ section.resume-section .resume-section-content {
 }
 .color-black {
   color: black;
+}
+.sub-description {
+    font-size: 12px;
+    margin-top: 7px;
+    color: #5f5f5fba;
 }
