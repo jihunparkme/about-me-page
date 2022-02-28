@@ -11385,8 +11385,8 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: #495057;
   color: #fff;
   border-radius: 100%;
@@ -11433,11 +11433,18 @@ section.resume-section .resume-section-content {
   }
 }
 .higtlight-white {
+  border-radius: 7px;
   background: linear-gradient(to top, #2E5984 100%, transparent 100%);
   color: white;
 }
 .font-color-green {
   color: #009000;
+}
+.font-color-black {
+  color: black;
+}
+.font-color-gray {
+  color: var(--bs-gray);
 }
 .tag {
   color: #6c757d; 
@@ -11477,11 +11484,28 @@ section.resume-section .resume-section-content {
     display:inline-block;
     width: 20%;
 }
-.color-black {
-  color: black;
-}
 .sub-description {
     font-size: 12px;
     margin-top: 7px;
     color: #5f5f5fba;
+}
+.department {
+  font-size: 1.3rem !important;
+  text-transform: none;
+}
+.font-bold{
+  font-weight: bold !important;
+}
+.small-rem {
+  font-size: 0.8rem !important;
+  margin-left: 1rem;
+}
+.resume-section ul li {
+  margin-bottom: 0.2rem;
+}
+.company-title-tag {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 0.5rem;
 }
