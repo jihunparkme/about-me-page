@@ -11444,7 +11444,7 @@ section.resume-section .resume-section-content {
   color: black;
 }
 .font-color-gray {
-  color: var(--bs-gray);
+  color: var(--bs-gray) !important;
 }
 .tag {
   color: #6c757d; 
@@ -11490,15 +11490,18 @@ section.resume-section .resume-section-content {
     color: #5f5f5fba;
 }
 .department {
-  font-size: 1.3rem !important;
+  font-size: 1.5rem !important;
   text-transform: none;
 }
 .font-bold{
   font-weight: bold !important;
 }
-.small-rem {
+.small-rem-left {
   font-size: 0.8rem !important;
   margin-left: 1rem;
+}
+.small-rem {
+  font-size: 0.8rem !important;
 }
 .resume-section ul li {
   margin-bottom: 0.2rem;
@@ -11508,4 +11511,7 @@ section.resume-section .resume-section-content {
   font-style: italic;
   font-size: 15px;
   margin-top: 0.5rem;
+}
+.text-none-transform {
+  text-transform: none;
 }
