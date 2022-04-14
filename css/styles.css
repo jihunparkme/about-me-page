@@ -11515,6 +11515,9 @@ section.resume-section .resume-section-content {
 .text-none-transform {
   text-transform: none;
 }
+.text-right {
+    text-align: right!important;
+}
 .badge-info {
     color: #fff;
     background-color: #17a2b8;
