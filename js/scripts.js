@@ -29,5 +29,29 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 
-    
+    countWorkDay("kc-start-date", "kc-work-period");
+    countWorkDay("spring-study-start", "spring-study-period");
 });
+
+function countWorkDay(id, target) {
+
+    let today = new Date();   
+
+    let workDate = document.getElementById(id).innerText;
+    let startDateStr = workDate.split("~")[0].trim();
+    let startDate = new Date(startDateStr)
+ 
+    let year = parseInt(monthDiff(startDate, today) / 12);
+    let month = monthDiff(startDate, today) % 12;
+    document.getElementById(target).innerText = year + "년 " + month + "개월";
+}
+
+function monthDiff(start, end) {
+
+    let months;
+    months = (end.getFullYear() - start.getFullYear()) * 12;
+    months -= start.getMonth();
+    months += end.getMonth();
+
+    return months <= 0 ? 0 : months + 1;
+}
