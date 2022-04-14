@@ -39,9 +39,13 @@ function countWorkDay(id, target) {
     let today = new Date();   
 
     let workDate = document.getElementById(id).innerText;
-    let startDateStr = workDate.split("~")[0].trim();
-    let startDate = new Date(startDateStr)
- 
+    let startDateList = workDate.split("~")[0].trim().split(".");
+    let y = startDateList[0];
+    let m = startDateList[1];
+    let d = startDateList[2];
+
+    let startDate = new Date(y,m-1,d,0,0,0);
+
     let year = parseInt(monthDiff(startDate, today) / 12);
     let month = monthDiff(startDate, today) % 12;
     document.getElementById(target).innerText = year + "년 " + month + "개월";
