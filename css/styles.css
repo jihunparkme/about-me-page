@@ -11526,6 +11526,10 @@ section.resume-section .resume-section-content {
     color: #fff;
     background-color: #007bff;
 }
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
 .badge-secondary {
     color: #fff;
     background-color: #6c757d;

@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     countWorkDay("kc-start-date", "kc-work-period");
     countWorkDay("spring-study-start", "spring-study-period");
+    countTotalWorkPeriod();
 });
 
 function countWorkDay(id, target) {
@@ -55,3 +56,26 @@ function monthDiff(start, end) {
 
     return months <= 0 ? 0 : months + 1;
 }
+
+function countTotalWorkPeriod() {
+    
+    let workPeriodList = document.getElementsByClassName("work-period");
+    let year = 0;
+    let month = 0;
+
+    for (let i=0; i<workPeriodList.length; i++) {
+        let date = workPeriodList[0].innerText.split(" ");
+        let y = date[0].split("년");
+        let m = date[1].split("개월");
+
+        year += parseInt(y);
+        month += parseInt(m);
+    }
+
+    year += parseInt(month / 12);
+    month = month % 12;
+
+    document.getElementById("total-work-period").innerText = "총 " + year + "년 " + month + "개월";
+}
+
+
