@@ -30,8 +30,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
     countWorkDay("kc-start-date", "kc-work-period");
-    countWorkDay("spring-study-start", "spring-study-period");
-    countWorkDay("java-playground-start", "java-playground-period");
     countTotalWorkPeriod();
 });
 
