@@ -11537,3 +11537,6 @@ section.resume-section .resume-section-content {
 .mr-0-25 {
     margin-right: 0.25rem !important;
 }
+.text-link {
+  color:#6c757d; text-decoration: none;
+}
