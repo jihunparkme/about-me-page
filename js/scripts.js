@@ -28,8 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-
-    countWorkDay("kc-start-date", "kc-work-period");
+    countWorkDay("11st-start-date", "11st-work-period");
     countTotalWorkPeriod();
 });
 
@@ -69,9 +68,15 @@ function countTotalWorkPeriod() {
     let month = 0;
 
     for (let i=0; i<workPeriodList.length; i++) {
-        let date = workPeriodList[0].innerText.split(" ");
-        let y = date[0].split("년");
-        let m = date[1].split("개월");
+        let date = workPeriodList[i].innerText.split(" ");
+        let y = 0;
+        let m = 0;
+        if (date.length == 2) {
+            y = date[0].split("년");
+            m = date[1].split("개월");
+        } else {
+            m = date[0].split("개월");
+        }
 
         year += parseInt(y);
         month += parseInt(m);
