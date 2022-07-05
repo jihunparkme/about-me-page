@@ -47,7 +47,6 @@ function countWorkDay(id, target) {
     let year = parseInt(monthDiff(startDate, today) / 12);
     let month = monthDiff(startDate, today) % 12;
 
-
     document.getElementById(target).innerText = getPeriodInnerTest(year, month);
 }
 
@@ -58,7 +57,7 @@ function monthDiff(start, end) {
     months -= start.getMonth();
     months += end.getMonth();
 
-    return months <= 0 ? 0 : months + 1;
+    return months <= 0 ? 0 : months;
 }
 
 function countTotalWorkPeriod() {
