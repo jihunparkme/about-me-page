@@ -11540,3 +11540,30 @@ section.resume-section .resume-section-content {
 .text-link {
   color:#6c757d; text-decoration: none;
 }
+.answer {
+  display: none;
+  padding-bottom: 5px;
+  padding: 10px 25px;
+}
+#faq-title {
+  font-size: 25px;
+}
+.faq-content {
+  /*border-bottom: 1px solid #e0e0e0;*/
+}
+.question {
+  font-size: 17px;
+  padding: 0px 0px 0px 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.question:hover {
+  color: #2962ff;
+}
+[id$="-toggle"] {
+  margin-right: 15px;
+}
