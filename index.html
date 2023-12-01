@@ -90,34 +90,14 @@
                                 <span class="text-primary small-rem-left">2022.06. ~ Present.</span>
                             </div>
                             <ul>
-                                <li>Claim(취소/반품/교환), CX 서비스 개발/운영 및 개선.</li>
-                                <li>Project.</li>
-                                <ul>
-                                    <li><strong>AppleCare+ 후가입</strong> 프로세스 개발(판매 연동율 8.3%p 증가, 전년대비 약 0.2억 수익)</li>
-                                    <li><a href="https://m.11st.co.kr/page/luxury/home" class="company" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서</strong> 페이지, <strong>Klip, UPTN API</strong> 연동, <strong> 보증서 발급 배치</strong> 개발</li>
-                                    <li>11chat 채팅상담 <strong>주문/결제/배송/클레임 정보 API</strong> 개발</li>
-                                    <li><strong>AppleCare+ API</strong> 연동, <strong> AC+ 연동/해지/검증 배치</strong> 개발</li>
-                                    <li>쿠폰 추천 영역 개발(스토어, 전시, 쿠폰, 추천 등 <strong>다수 API 연동 및 최적화</strong>)</li>
-                                    <li>우주패스 함께쓰기 기능 추가에 따른 <strong>무료반품/교환 혜택 로직 개선</strong></li>
-                                    <li>신규 장바구니 쿠폰 도입에 따른 <strong>반품/취소/교환 로직 개선</strong></li>
-                                    <li>나의11번가/주무배송 페이지 <strong>광고 지면 개발</strong></li>
-                                </ul>
+                                <li>나의 11번가 서비스 개발/운영 및 개선.</li>
+                                <li>클레임(취소/반품/교환) 로직 리펙토링 및 개선.</li>
+                                <li>주기적인 에러 로그 모니터링을 통한 에러 처리.</li>
                                 <li>Improvement.</li>
                                 <ul>
-                                    <li>팀내 반복되는 이슈/업무 <strong>개선 및 자동화</strong></li>
-                                    <ul>
-                                        <li>맞춤법 검사 슬랙봇 개발 - 간편한 <strong>맞춤법 검사</strong> 기능 제공</li>
-                                        <li>그룹코드 조회 슬랙봇 개발 - 높은 만족도로 <strong>다수 개발자 사용</strong></li>
-                                        <li>Jenkins Build 자동화 - 정기점검 이후 미수행 배치(약 20개)를 수동으로 재기동하던<strong> 번거로움 개선</strong></li>
-                                        <li>팀 신규 배치 서버 <strong>무중단 배포</strong> 적용 - 배포 시 배치가 중단되는 현상 개선</li>
-                                        <li>단순 반복 수기 업무(조회, 비교, 수정 등)를 배치 자동화로 사업팀 하루 <strong>업무시간 1시간 단축</strong></li>
-                                        <li>여러 절차가 필요한 반복 업무를 <strong>API 호출만으로 처리</strong>되도록 개선</li>
-                                        <li>잦은 상용 데이터 조회가 필요한 정보를 API로 제공하여 <strong>업무 효율성 향상</strong></li>
-                                    </ul>
                                     <li>Database 탈중앙화를 위한 이관 대상 <strong>테이블 분리</strong>(-% 쿼리 분리)</li>
                                     <li>고객 경험 향상을 위한 마이 페이지 <strong>개선 및 이슈 대응</strong>(광고, 팝업, 배너, 기능, CDD 인증 등)</li>
                                     <li>레거시 코드 <strong>리펙터링</strong>(거대 메서드/API 분리 및 이관, 중복/불필요 코드 제거 등..)</li>
-                                    <li>문자열 코드로 관리되던 속성을 <strong>공통 관리 테이블을 활용</strong>하도록 개선</li>
                                     <li>Wiki를 활용한 팀내 업무 효율성 향상(신규 입사자 온보딩, 배포, 업무 가이드 등..)</li>
                                 </ul>
                                 <li>Tech Stack.</li>
@@ -136,6 +116,112 @@
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
                                 </div>
                             </ul>
+                            <div>
+                                <span class="lead mt-4 mb-4 font-color-black font-bold">AppleCare+</span>
+                                <span class="text-primary small-rem-left">2022.06. ~ Present.</span>
+                            </div>
+                            <ul>
+                                <li>AC+ 후가입 프로세스 개발 (전년대비 <strong>연동율 12.3% 증가</strong>, <strong>약 0.2억 추가 수익</strong>)</li>
+                                <li><strong>슬랙 연동</strong>을 통한 AC+ 연동/해제 관련 이슈 모니터링</li>
+                                <li>AC+ 관련 배치 개발</li>
+                                <ul>
+                                    <li>연동, 구매확정 배치</li>
+                                    <li>연동 해제 및 주문 취소 배치 (미개봉 반품 상품 주문 시 <strong>연동 실패 이슈 개선</strong>)</li>
+                                    <li>수기 가입건 정보 업데이트 배치 ()</li>
+                                </ul>
+                                <li><strong>AppleCare Connect API</strong> 연동</li>
+                                <li>Tech Stack.</li>
+                                <div>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
+                                </div>
+                            </ul>
+                            <div>
+                                <span class="lead mt-4 mb-4 font-color-black font-bold">OOAh luxe</span>
+                                <span class="text-primary small-rem-left">2023.01. ~ 2023.03.02.</span>
+                            </div>
+                            <ul>
+                                <li><a href="https://m.11st.co.kr/page/luxury/home" class="company" target="_blank" style="color:#6c757d">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서</strong> 페이지 개발</li>
+                                <li>무분별한 API 요청을 막기 위해 <strong>Redis를 적용한 요청 횟수 제한</strong></li>
+                                <li><strong>NFT 보증서 발급 배치</strong> 개발</li>
+                                <li><strong>Klip Partners</strong> / <strong>UPTN Station API</strong> 연동</li>
+                                <li>Tech Stack.</li>
+                                <div>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Redis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
+                                </div>
+                            </ul>
+                            <div>
+                                <span class="lead mt-4 mb-4 font-color-black font-bold">Improvement.</span>
+                            </div>
+                            <ul>
+                                <li>단순 반복 작업(비교, 수정 등) 배치 자동화 (사업팀 하루 <strong>업무시간 1시간 단축</strong> 사례)</li>
+                                <li>예외 처리를 위해 문자열로 관리되던 코드대신 예외 관리 테이블 활용</li>
+                                <!-- ex. 특정 상품번호/판매자번호/카테고리번호.. 에 해당하는 문자열 코드들을 테이블 조회로(order-info, batch-11st) -->
+                                <li>Tech Stack.</li>
+                                <div>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
+                                </div>
+                            </ul>
+
+
+
+
+
+
+
+
+                            <!-- <div>
+                                <span class="lead mt-4 mb-4 font-color-black font-bold">Customer eXperience 서비스 개발</span>
+                                <span class="text-primary small-rem-left">2022.06. ~ Present.</span>
+                            </div>
+                            <ul>
+                                <li>Claim(취소/반품/교환), CX 서비스 개발/운영 및 개선.</li>
+                                <li>Project.</li>
+                                <ul>
+                                    <li><strong>AppleCare+ 후가입</strong> 프로세스 개발(판매 연동율 8.3%p 증가, 전년대비 약 0.2억 수익)</li>
+                                    <li><a href="https://m.11st.co.kr/page/luxury/home" class="company" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서</strong> 페이지, <strong>Klip, UPTN API</strong> 연동, <strong> 보증서 발급 배치</strong> 개발</li>
+                                </ul>
+                                <li>Improvement.</li>
+                                <ul>
+                                    <li>팀내 반복되는 이슈/업무 <strong>개선 및 자동화</strong></li>
+                                    <ul>
+                                        <li>맞춤법 검사 슬랙봇 개발 - 간편한 <strong>맞춤법 검사</strong> 기능 제공</li>
+                                        <li>그룹코드 조회 슬랙봇 개발 - 높은 만족도로 <strong>다수 개발자 사용</strong></li>
+                                        <li>Jenkins Build 자동화 - 정기점검 이후 미수행 배치(약 20개)를 수동으로 재기동하던<strong> 번거로움 개선</strong></li>
+                                        <li>팀 신규 배치 서버 <strong>무중단 배포</strong> 적용 - 배포 시 배치가 중단되는 현상 개선</li>
+                                        <li>여러 절차가 필요한 반복 업무를 <strong>API 호출만으로 처리</strong>되도록 개선</li>
+                                        <li>잦은 상용 데이터 조회가 필요한 정보를 API로 제공하여 <strong>업무 효율성 향상</strong></li>
+                                    </ul>
+                                    <li>Database 탈중앙화를 위한 이관 대상 <strong>테이블 분리</strong>(-% 쿼리 분리)</li>
+                                    <li>고객 경험 향상을 위한 마이 페이지 <strong>개선 및 이슈 대응</strong>(광고, 팝업, 배너, 기능, CDD 인증 등)</li>
+                                    <li>레거시 코드 <strong>리펙터링</strong>(거대 메서드/API 분리 및 이관, 중복/불필요 코드 제거 등..)</li>
+                                    <li>Wiki를 활용한 팀내 업무 효율성 향상(신규 입사자 온보딩, 배포, 업무 가이드 등..)</li>
+                                </ul>
+                                <li>Tech Stack.</li>
+                                <div>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBatch</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Redis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">VueJS</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
+                                </div>
+                            </ul> -->
                         </div>
                         <div class="flex-shrink-0">
                             <p class="text-primary" id="11st-start-date" style="margin-bottom: 0rem;">2022.06.20. ~ Present</p>
