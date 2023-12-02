@@ -7715,7 +7715,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #3b53ba !important;
 }
 
 .text-secondary {
@@ -11566,4 +11566,7 @@ section.resume-section .resume-section-content {
 }
 [id$="-toggle"] {
   margin-right: 15px;
+}
+.main-title {
+  color: #17a2b8;
 }
