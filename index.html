@@ -8,7 +8,7 @@
         <title>박지훈 | 꾸준한 개발자</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -57,7 +57,7 @@
                     </p>
                     <p class="lead mb-5">
                         📖 <strong>배움이 일상</strong>인 개발자.<br/>
-                        하루라도 1-commit을 하지 않으면 어색할 정도로 배움을 즐기고 일상이 되었습니다.<br/>
+                        하루라도 commit을 하지 않으면 어색할 정도로 배움을 즐기고 일상이 되었습니다.<br/>
                         <br/>
                         🤝🏼 <strong>주변 동료들에게 도움을 주는</strong> 개발자.<br />
                         누군가 고민이 있거나, 개발하면서 어려움을 마주하거나 도움이 필요할 때 먼저 다가가고 함께 성장하는 환경을 선호합니다.<br/>
@@ -97,9 +97,9 @@
                                 <li><strong>나의 11번가</strong> 서비스 개발/운영 및 개선.</li>
                                 <li>레거시 코드 <strong>리팩토링</strong>. (거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)</li>
                                 <li>로그 모니터링을 통한 <strong>이슈 대응과 에러 개선</strong>.</li>
-                                <li>DB 탈중앙화 대비 분리 대상 테이블 <strong>참조 쿼리 이관</strong>. (약 10% 이관 중)</li>
+                                <li>DB 탈중앙화 대비 대상 테이블 <strong>참조 쿼리 분리 및 이관</strong>. (약 10% 이관 중)</li>
                                 <ul>
-                                    <li>조회 성능 이슈 방지를 위해 비교 로직 비동기 처리</li>
+                                    <li>조회 성능 이슈 방지를 위해 이관 전/후 비교 로직 비동기 처리</li>
                                     <li>슬랙 연동으로 이관 이슈 모니터링</li>
                                     <li>Functional Interfaces 활용 이관 전/후 결과 비교</li>
                                 </ul>
@@ -147,9 +147,9 @@
                                 <span class="text-primary small-rem-left">2023.01. ~ 2023.03.02.</span>
                             </div>
                             <ul>
-                                <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서</strong> 페이지 개발. (주문 대비 5% 발급 요청)</li>
-                                <li>무분별한 API 요청을 막기 위해 <strong>Redis 적용 민팅 요청 횟수 제한.</strong></li>
-                                <li><strong>NFT 보증서 발급 배치</strong> 개발</li>
+                                <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. (주문 대비 5% 발급 요청)</li>
+                                <li>무분별한 외부 API 요청을 막기 위해 <strong>Redis를 적용한 NFT 발급 요청 횟수 제한.</strong></li>
+                                <li>다건 주문 <strong>NFT 보증서 발급 배치</strong> 개발</li>
                                 <li><strong>Klip Partners</strong> / <strong>UPTN Station API</strong> 연동.</li>
                                 <li>Tech Stack.</li>
                                 <div>
@@ -168,15 +168,15 @@
                                 <span class="lead mt-4 mb-4 font-color-black font-bold">Improvement.</span>
                             </div>
                             <ul>
-                                <li>맞춤법 검사 슬랙봇(SpellChecker) 개발. (<strong>빠르고 간편한</strong> 맞춤법 검사 제공)</li>
+                                <li>맞춤법 검사 슬랙봇(SpellChecker) 개발. (슬랙에서 <strong>간편한 맞춤법 검사 기능</strong> 제공 목적)</li>
 
                                 <li>공통 코드 조회 슬랙봇(WhatIsThisCode) 개발. (<strong>높은 만족도</strong>로 다수 개발자 사용)</li>
 
-                                <li>단순 반복 작업(비교, 수정 ··) 배치 자동화. (사업팀 <strong>하루 업무시간 1시간 단축</strong> 사례)</li>
+                                <li>단순 반복 업무(비교, 수정 ··) 배치 자동화. (사업팀 <strong>하루 업무시간 1시간 단축</strong> 사례)</li>
                                 
-                                <li>사내 배치 Jenkins Build 자동화. (사내 정기 점검 이후 미수행 배치(약 20개)를 <strong>수동으로 재기동하던 번거로움 개선</strong>)</li>
+                                <li>사내 배치 Jenkins Build 자동화. (사내 정기 점검 이후 미수행 배치(약 20개)를 <strong>수동으로 재기동하던 작업 개선</strong>)</li>
 
-                                <li>단일 서버의 팀 신규 배치 <strong>무중단 배포</strong>로 개선. (<a href="https://data-make.tistory.com/765" target="_blank">배포 시 배치가 중단되는 현상 개선</a>)</li>
+                                <li>팀 배치 서버 <strong>무중단 배포</strong>로 개선. (<a href="https://data-make.tistory.com/765" target="_blank">배포 시 배치가 중단되는 현상 개선</a>)</li>
 
                                 <li>업무 효율성 향상을 위해 여러 절차가 필요한 <strong>반복 업무를 API로 간소화</strong></li>
                                 <!-- > 외부 API 호출 로그 조회 -->
@@ -612,12 +612,12 @@
                             <span class="book-title">Effective Java 3/E (~ing)</span><span class="book-tag"># Joshua Bloch</span>
                         </li> -->
                         <li>
-                           <span class="fa-li icon-book"><i class="fas fa-book"></i></span>
+                           <span class="fa-li icon-book"><i class="fa-solid fa-person-running"></i></span>
                             <span class="book-title"><a class="text-link" href="https://www.yes24.com/Product/Goods/108431347" target="_blank">도메인 주도 개발 시작하기</a></span><span class="book-tag">#최범균</span>
                             <p class="sub-description"><span><i class="fas fa-check"></i> 업무에 DDD 적용을 위한 목적</span></p>
                         </li>
                         <li>
-                           <span class="fa-li icon-book"><i class="fas fa-book"></i></span>
+                           <span class="fa-li icon-book"><i class="fa-solid fa-person-running"></i></span>
                             <span class="book-title"><a class="text-link" href="http://www.yes24.com/Product/Goods/20461940" target="_blank">실용주의 프로그래머</a></span><span class="book-tag">#David Thomas #Andrew Hunt</span>
                             <p class="sub-description"><span><i class="fas fa-check"></i> 숙련공에서 마스터로 가기 위한 목적</span></p>
                         </li>
