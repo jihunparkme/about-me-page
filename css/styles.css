@@ -11327,6 +11327,11 @@ p.lead {
   font-size: 1.5rem;
 }
 
+.sub-title {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.2rem;
+}
+
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
