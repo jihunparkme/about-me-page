@@ -95,12 +95,12 @@
                             </div>
                             <ul>
                                 <li><strong>나의 11번가</strong> 영역 서비스 개발/운영 및 개선.</li>
-                                <li>레거시 코드 리팩토링으로 수정을 위한 <strong>코드 분석 시간 단축</strong>. (거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)</li>
-                                <li>DB 탈중앙화 대비 대상 테이블 <strong>참조 쿼리 분리 및 이관</strong>. (약 10% 이관 중)</li>
+                                <li>레거시 코드 리팩토링으로 유지보수를 위한 <strong>코드 분석 시간 단축</strong>. (거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)</li>
+                                <li>DB 탈중앙화 대비 분리 대상 테이블 <strong>참조 쿼리 분리 및 이관</strong>. (약 10% 이관 중)</li>
                                 <ul>
-                                    <li>조회 성능 이슈 방지를 위해 이관 전/후 비교 로직 비동기 처리</li>
-                                    <li>슬랙 연동으로 이관 이슈 모니터링</li>
-                                    <li>Functional Interfaces 활용 이관 전/후 결과 비교</li>
+                                    <li>조회 성능 이슈 방지를 위해 이관 전/후 비교 로직 <strong>비동기 처리</strong></li>
+                                    <li><strong>슬랙 연동</strong>으로 이관 이슈 모니터링</li>
+                                    <li><strong>Functional Interfaces 활용</strong> 이관 전/후 결과 비교</li>
                                 </ul>
                                 <li>로그 모니터링을 통한 <strong>이슈 대응과 에러 개선</strong>.</li>
                                 <li><strong>Wiki를 활용</strong>한 팀 내 업무 효율성 향상. (업무 가이드, 히스토리 기록 ··)</li>
@@ -121,13 +121,13 @@
                                 <span class="text-primary small-rem-left">2022.06. ~ 2023.09.</span>
                             </div>
                             <ul>
-                                <li>AC+ 후 가입 프로세스 개발. (전년 대비 <strong>연동률 12.3% 증가</strong>, 약 0.2억 추가 수익)</li>
+                                <li>AC+ 후 가입 프로세스 개발. (전년 대비 <strong>연동률 12.3% 증가</strong>, <strong>0.2억 추가 수익</strong>)</li>
                                 <li><strong>슬랙 연동</strong>으로 AC+ 연동/해제 관련 이슈 모니터링.</li>
                                 <li>AC+ 관련 배치 개발.</li>
                                 <ul>
-                                    <li>연동, 구매 확정 배치</li>
+                                    <li>배송 완료 이후 <strong>자동 연동</strong>, 구매 확정 배치</li>
                                     <li>연동 해제 및 주문 취소 배치 (취소/반품 상품 주문 시 <strong>연동 실패 이슈 개선</strong>)</li>
-                                    <li>수기 가입건 정보 업데이트 배치 (ACC <strong>데이터 정합성 문제 개선</strong>)</li>
+                                    <li>수기 가입 요청건 정보 업데이트 배치 (ACC <strong>데이터 정합성 문제 개선</strong>)</li>
                                 </ul>
                                 <li><a href="https://applecareconnect.apple.com/api-docs/accuat/html/WSReference.html" target="_blank">AppleCare Connect API</a> 연동.</li>
                                 <li>Tech Stack.</li>
@@ -147,9 +147,9 @@
                                 <span class="text-primary small-rem-left">2023.01. ~ 2023.03.02.</span>
                             </div>
                             <ul>
-                                <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. (오픈 이후 6개월 주문 건수 3.5만 건, 주문 대비 5% 발급 요청)</li><!-- 23.03 오픈 23.11 기준 -->
+                                <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. (오픈 이후 6개월 <strong>주문 건수 3.5만 </strong>건, 주문 대비 <strong>5% 발급</strong> 요청)</li><!-- 23.03 오픈 23.11 기준 -->
                                 <li>무분별한 외부 API 요청을 막기 위해 <strong>Redis를 적용한 NFT 발급 요청 횟수 제한.</strong></li>
-                                <li>여러 건 주문 <strong>NFT 보증서 발급 배치</strong> 개발</li>
+                                <li>다량 주문건 <strong>NFT 보증서 발급 배치</strong> 개발.</li>
                                 <li><a href="https://docs.klipwallet.com/rest-api/rest-api-card-minting" target="_blank">Klip Partners</a> / <a href="https://m.uptn.io/" target="_blank">UPTN Station</a> API 연동.</li>
                                 <li>Tech Stack.</li>
                                 <div>
@@ -168,13 +168,13 @@
                                 <span class="lead mt-4 mb-4 font-color-black font-bold">Improvement.</span>
                             </div>
                             <ul>
-                                <li>맞춤법 검사 슬랙봇(SpellChecker) 개발. (슬랙에서 <strong>간편한 맞춤법 검사 기능</strong> 제공 목적)</li>
+                                <li>맞춤법 검사 슬랙봇(SpellChecker) 개발. (<strong>간편한 맞춤법 검사 기능</strong> 제공 목적)</li>
 
-                                <li>공통 코드 조회 슬랙봇(WhatIsThisCode) 개발. (<strong>개발 생산성 향상</strong> 목적, <strong>높은 만족도</strong>로 다수 개발자 사용)</li>
+                                <li>공통 코드 조회 슬랙봇(WhatIsThisCode) 개발. (<strong>개발 생산성 향상</strong> 목적, <strong>높은 만족도</strong>로 사내 다수 개발자 사용)</li>
 
                                 <li>단순 반복 업무(비교, 수정 ··) 배치 자동화. (사업팀 <strong>하루 업무시간 1시간 단축</strong> 사례)</li>
                                 
-                                <li>사내 배치 Jenkins Build 자동화. (사내 정기 점검 이후 미수행 배치(약 20개)를 <strong>수동으로 재기동하던 작업 개선</strong>)</li>
+                                <li>사내 배치 Jenkins Build 자동화. (사내 정기 점검 이후 약 20개의 미수행 배치를 <strong>수동으로 재기동하던 작업 개선</strong>)</li>
 
                                 <li>팀 배치 서버 <strong>무중단 배포</strong>로 개선. (<a href="https://11st-tech.github.io/2023/12/11/spring-batch-non-stop-deploy/" target="_blank">심볼릭 링크로 스프링 배치 무중단 배포하기</a>)</li>
 
@@ -275,9 +275,9 @@
                                 <li><span class="font-bold">반복 업무 효율성 향상</span>을 위해 자동화 솔루션 자체 개발</li>
                                 <ul>
                                   <li><span class="font-bold">Selenium, BeautifulSoup, Pillow</span> 라이브러리를 활용한 검색 자동화</li>
-                                  <li><span class="font-bold">Merge query</span> 적용으로 데이터 변동 감지 쿼리 개선</li>
+                                  <li><span class="font-bold">Merge query</span> 적용으로 데이터 변동 감지</li>
                                 </ul>
-                                <li>외주 프로그램 도입 시 발생하는 비용 <span class="font-bold">연간 1억 원 절감</span></li>
+                                <li>자체 개발로 외주 프로그램 도입 시 발생하는 <span class="font-bold">연 1억 원의 비용 절감</span></li>
                                 <li>업체 대비 Retry Rate <span class="font-bold">4배 개선</span>, Success Rate <span class="font-bold">약 98%</span></li>
                                 <li>단순 반복 업무 자동화로<span class="font-bold"> 업무 시간 1/12 단축</span></li><!-- 수동 검색 시 건당 2분 소요, 200건 -> 6.6h (400m)   -->
                                 <li>Tech Stack.</li>
@@ -293,8 +293,8 @@
                                 <li><span class="font-bold">새로운 기술에 대한 관심</span>과 <span class="font-bold">업무 기여</span>를 위해 개발 참여</li>
                                 <li>내/외부 TM(Translation Memory) <strong>수집 및 전처리</strong></li>
                                 <li>사내 번역물 <strong>데이터 통계 및 관리</strong></li>
-                                <li>번역 용어 검색을 위한 <strong>외부 API 연동</strong></li>
-                                <li>Subword modeling(<a href="https://github.com/google/sentencepiece" target="_blank" style="color:#6c757d">sentencepiece</a>), Spacing modeling(<a href="https://github.com/Taekyoon/takos-alpha" target="_blank" style="color:#6c757d">TaKos</a>)</li>
+                                <li>번역 용어 검색을 위한 <a href="https://krdict.korean.go.kr/openApi/openApiInfo" target="_blank">한국어 기초 사전 API</a> 연동</li>
+                                <li>Subword modeling(<a href="https://github.com/google/sentencepiece" target="_blank">sentencepiece</a>), Spacing modeling(<a href="https://github.com/Taekyoon/takos-alpha" target="_blank">TaKos</a>)</li>
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
@@ -341,7 +341,7 @@
                             <div class="flex-grow-1">
                                 <h3 class="mb-1 text-none-transform">RE:ON Homepage.</h3>
                                 <ul>
-                                    <li>친한 형의 창업 선물로 프로젝트 진행 (<a href="https://github.com/jihunparkme/reon-site" target="_blank">Github</a>)</li>
+                                    <li>친한 형의 창업 기념으로 프로젝트 진행 (<a href="https://github.com/jihunparkme/reon-site" target="_blank">Github</a>)</li>
                                     <li><a href="https://www.inflearn.com/roadmaps/373" target="_blank">Spring Roadmap</a> 및 실무를 통한 학습 내용 활용</li>
                                     <li>관심 있고 사용해 보고 싶었던 기술 적용</li>
                                     <li>Tech Stack.</li>
