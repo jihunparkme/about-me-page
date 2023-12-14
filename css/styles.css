@@ -237,7 +237,7 @@ sup {
 
 a {
   color: #3030bec2;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #974a2d;
@@ -11574,4 +11574,7 @@ section.resume-section .resume-section-content {
 }
 .main-title {
   color: #17a2b8;
+}
+.comment {
+  font-size: 0.9em;
 }
