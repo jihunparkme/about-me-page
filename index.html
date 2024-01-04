@@ -98,7 +98,7 @@
                                 <li>레거시 코드 리팩토링으로 유지보수를 위한 <strong>코드 분석 시간 단축</strong>. <span class="comment">(거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)<span></li>
                                 <li>DB 탈중앙화 대비 분리 대상 테이블 참조 쿼리 분리 및 이관. <span class="comment">(약 10% 이관 중)</span></li>
                                 <ul>
-                                    <li><strong>조회 성능 이슈 방지</strong>를 위해 이관 전/후 비교 로직 <strong>비동기 처리</strong></li>
+                                    <li><strong>조회 성능 이슈 방지</strong>를 위해 이관 전/후 비교 로직 <strong>비동기 처리</strong> <span class="comment">(<a href="https://11st-tech.github.io/2024/01/04/completablefuture/" target="_blank">Java CompletableFuture로 비동기 적용하기</a>)</span></li>
                                     <li><strong>Functional Interfaces 활용</strong> 이관 전/후 결과 비교</li>
                                 </ul>
                                 <li>로그 모니터링, 슬랙 알림을 통한 <strong>이슈 대응과 에러 개선</strong>.</li>
