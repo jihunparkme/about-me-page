@@ -71,7 +71,7 @@
                     <div class="social-icons">
                         <span><a class="social-icon" href="https://github.com/jihunparkme" target="_blank"><i class="fab fa-github"></i></a>GitHub. <a href="https://github.com/jihunparkme" target="_blank">https://github.com/jihunparkme</a></span><br/>
                         <span><a class="social-icon" href="https://data-make.tistory.com/" target="_blank"><i class="fab fa-blogger-b"></i></a>Tistory Blog. <a href="https://data-make.tistory.com/" target="_blank">https://data-make.tistory.com/</a></span><br/>
-                        <span><a class="social-icon" href="https://jihunparkme.gitbook.io/docs/" target="_blank"><i class="fab fa-github-alt"></i></a>Git Blog. <a href="https://jihunparkme.gitbook.io/docs/" target="_blank">https://jihunparkme.gitbook.io/docs/</a></span><br/>
+                        <span><a class="social-icon" href="https://jihunparkme.gitbook.io/docs/" target="_blank"><i class="fab fa-github-alt"></i></a>GitBook. <a href="https://jihunparkme.gitbook.io/docs/" target="_blank">https://jihunparkme.gitbook.io/docs/</a></span><br/>
                         <span><a class="social-icon" href="https://www.linkedin.com/in/jihun-park-3b8943191/" target="_blank"><i class="fab fa-linkedin-in"></i></a>Linked in. <a href="https://www.linkedin.com/in/jihun-park-3b8943191/" target="_blank">https://www.linkedin.com/in/jihun-park-3b8943191/</a><span><br/>
                         <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a> -->
                         <!-- <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
@@ -83,6 +83,7 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-1 text-none-transform font-color-black main-title">Work Experience.</h2>
+                    <!-- Y를 구현해서, X를 성취했고, 그 결과 Z를 이루었다. (무엇을, 어떻게, 결과는?) -->
                     <p class="badge badge-success mb-5" id="total-work-period"></p>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -90,29 +91,31 @@
                             <div class="company-title-tag">#<a href="https://www.11st.co.kr" target="_blank">11ST</a> #대한민국의-오픈마켓</div>
                             <div class="subheading mb-3 department">Claim Development Team / Backend Developer</div>
                             <div>
-                                <span class="lead mt-4 mb-4 font-color-black font-bold">Customer eXperience 서비스 개발</span>
+                                <span class="lead mt-4 mb-4 font-color-black font-bold">나의 11번가 영역 서비스</span>
                                 <span class="text-primary small-rem-left">2022.06. ~ Present.</span>
                             </div>
                             <ul>
-                                <li><strong>나의 11번가</strong> 영역 서비스 개발/운영 및 개선.</li>
                                 <li><strong>레거시 코드 리팩토링</strong>으로 유지보수를 위한 <strong>코드 분석 시간 단축</strong>. <span class="comment">(거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)<span></li>
-                                <li>DB 탈중앙화 대비 분리 대상 테이블 참조 쿼리 분리 및 이관.</li>
+                                <li>DB 탈중앙화 대비 분리 대상 테이블 참조 쿼리 이관.</li>
                                 <ul>
-                                    <li>이관 결과 비교 로직을 <strong>비동기 처리</strong>로 처리하여 <strong>조회 성능 이슈 방지</strong> <span class="comment">(<a href="https://11st-tech.github.io/2024/01/04/completablefuture/" target="_blank">Java CompletableFuture로 비동기 적용하기</a>)</span></li>
-                                    <li>이관을 위한 <strong>유틸 클래스</strong>를 제공하여 이관 작업이 <strong>이전보다 간결하고 빠르게</strong> 진행 <span class="comment">(Functional Interface 활용)</span></li>                             
+                                    <li>이관 결과 비교 로직을 <strong>비동기로 처리</strong>하여 검증으로 인한 <strong>성능 이슈 방지</strong> <span class="comment">(<a href="https://11st-tech.github.io/2024/01/04/completablefuture/" target="_blank">Java CompletableFuture로 비동기 적용하기</a>)</span></li>
+                                    <li><strong>유틸 클래스</strong>를 제공하여 <strong>이전보다 간결하고 빠르게</strong> 이관 작업 진행 <span class="comment">(Functional Interface 활용)</span></li>                             
                                 </ul>
-                                <li>로그 모니터링, 슬랙 알람을 통한 <strong>이슈 대응과 에러 개선</strong>.</li>
-                                <li><strong>Wiki를 활용</strong>한 팀 내 업무 효율성 향상. <span class="comment">(업무 가이드, 히스토리 기록 ··)</span></li>
+                                <li>로그 모니터링과 슬랙 알람 구성을 통해 빠른 <strong>이슈 대응과 에러 개선</strong>.</li>
+                                <li><strong>Wiki를 활용</strong>한 팀 내 업무 효율성 향상. <span class="comment">(업무 가이드, 히스토리, 정보 공유)</span></li>
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBatch</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">VueJS</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Vue.js</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Whatap</span>
                                 </div>
                             </ul>
                             <div>
@@ -120,24 +123,26 @@
                                 <span class="text-primary small-rem-left">2022.06. ~ 2023.09.</span>
                             </div>
                             <ul>
-                                <li>AC+ 후 가입 프로세스 개발. <span class="comment">(전년 대비 <strong>연동률 12.3% 증가</strong>, <strong>0.2억 추가 수익</strong>)</span></li>
+                                <li>AC+ 후 가입 서비스 개발. <span class="comment">(동시 가입 대비 <strong>연동률 12.3% 증가</strong>, <strong>0.2억 추가 수익</strong>)</span></li>
                                 <li>AC+ 관련 배치 개발.</li>
                                 <ul>
-                                    <li>배송 완료 이후 자동 연동, 구매 확정 배치</li>
-                                    <li>연동 해제 및 주문 취소 배치 <span class="comment">(미개봉 취소/반품 상품 출고 시 <strong>연동 실패 이슈 개선</strong>)</span></li>
-                                    <li>수기 연동 요청 건 데이터 업데이트 배치 <span class="comment">(ACC <strong>데이터 정합성 문제 개선</strong>)</span></li>
+                                    <li>본품 배송 완료 이후 AC+ 연동 배치</li>
+                                    <li>주문 취소 및 AC+ 연동 해제 배치 <span class="comment">(미개봉 취소/반품 상품 출고 시 <strong>연동 실패 이슈 개선</strong>)</span></li>
+                                    <li>수기 연동 요청 건 연동 정보 업데이트 배치 <span class="comment">(ACC <strong>데이터 정합성 문제 개선</strong>)</span></li>
                                 </ul>
-                                <li><a href="https://applecareconnect.apple.com/api-docs/accuat/html/WSReference.html" target="_blank">AppleCare Connect API</a> 연동.</li>
+                                <li>AC+ 동시 가입 서비스 개발. <span class="comment">(<a href="https://applecareconnect.apple.com/api-docs/accuat/html/WSReference.html" target="_blank">AppleCare Connect API</a>)</span></li>
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>                                    
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">VueJS</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Vue.js</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                 </div>
                             </ul>
                             <div>
@@ -145,36 +150,38 @@
                                 <span class="text-primary small-rem-left">2023.01. ~ 2023.03.02.</span>
                             </div>
                             <ul>
-                                <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. <span class="comment">(오픈 이후 6개월 <strong>주문 건수 3.5만 </strong>건, 주문 대비 <strong>5% 발급</strong> 요청)</span></li><!-- 23.03 오픈 23.11 기준 -->
-                                <li><strong>Redis를 활용</strong>하여 NFT 발급 요청 시도 횟수를 제한하고 <strong>무분별한 외부 API 요청 방어</strong></li>
-                                <li>다량 주문 건 <strong>NFT 발급 배치</strong> 개발.</li>
+                                <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. <span class="comment">(오픈 이후 6개월 간 <strong>주문 건수 3.5만 </strong>건, 주문 대비 <strong>5% NFT 발행</strong>)</span></li><!-- 23.03 오픈 23.11 기준 -->
+                                <li><strong>Redis를 활용</strong>하여 NFT 발행 재시도 횟수를 제한하고 <strong>무분별한 외부 API 요청 방어</strong></li>
+                                <li>다량 주문 건 <strong>NFT 발행 배치</strong> 개발.</li>
                                 <li><a href="https://docs.klipwallet.com/rest-api/rest-api-card-minting" target="_blank">Klip Partners</a> / <a href="https://m.uptn.io/" target="_blank">UPTN Station</a> API 연동.</li>
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Redis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">VueJS</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Vue.js</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                 </div>
                             </ul>
                             <div>
                                 <span class="lead mt-4 mb-4 font-color-black font-bold">Improvement.</span>
                             </div>
                             <ul>
-                                <li>맞춤법 검사 슬랙봇<span class="comment">(SpellChecker)</span> 개발. <span class="comment">(<strong>간편한 맞춤법 검사 기능</strong> 제공 목적)</span></li>
+                                <li>맞춤법 검사 슬랙봇<span class="comment">(SpellChecker)</span> 개발. <span class="comment">(슬랙을 통한 <strong>간편한 맞춤법 검사 기능</strong> 제공 목적)</span></li>
 
                                 <li>공통 코드 조회 슬랙봇<span class="comment">(<a href="https://data-make.tistory.com/778" target="_blank">WhatIsThisCode</a>)</span> 개발. <span class="comment">(<strong>개발 생산성 향상</strong> 목적, <strong>높은 만족도</strong>로 사내 다수 개발자 사용)</span></li>
 
-                                <li>단순 반복 업무<span class="comment">(비교, 수정 ··)</span> 배치 자동화. <span class="comment">(사업팀 <strong>하루 업무시간 1시간 단축</strong> 사례)</span></li>
+                                <li>단순 반복 업무<span class="comment">(비교, 수정 ··)</span> 배치로 자동화. <span class="comment">(사업팀 <strong>하루 업무시간 1시간 단축</strong> 사례)</span></li>
                                 
-                                <li>사내 배치 Jenkins Build 자동화. <span class="comment">(사내 서버 정기 점검 이후 약 20개의 미수행 배치를 <strong>수동으로 재기동하던 작업 개선</strong>)</span></li>
-
                                 <li>팀 배치 서버 <strong>무중단 배포</strong>로 개선. <span class="comment">(<a href="https://11st-tech.github.io/2023/12/11/spring-batch-non-stop-deploy/" target="_blank">심볼릭 링크로 스프링 배치 무중단 배포하기</a>)</span></li>
+
+                                <li>사내 배치 Jenkins Build 자동화. <span class="comment">(사내 서버 정기 점검 이후 약 20개의 미수행 배치를 <strong>수동으로 재기동하던 작업 개선</strong>)</span></li>
 
                                 <li>여러 절차가 필요한 <strong>반복 업무를 API로 간소화</strong>하여 업무 효율성 향상</li>
                                 <!-- > 외부 API 호출 로그 조회 -->
@@ -187,12 +194,13 @@
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Boot</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Python</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
                                 </div>
                             </ul>
                         </div>
@@ -227,7 +235,7 @@
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSTL</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">jQuery</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">MS-SQL</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
@@ -260,7 +268,7 @@
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">JSTL</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">jQuery</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">MS-SQL</span>
                                 </div>
@@ -297,7 +305,7 @@
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Boot</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Python</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">MongoDB</span>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Ubuntu</span>
@@ -340,24 +348,25 @@
                             <div class="flex-grow-1">
                                 <h3 class="mb-1 text-none-transform">RE:ON Homepage.</h3>
                                 <ul>
-                                    <li>가까운 분의 창업 기념으로 프로젝트 진행 <span class="comment">(<a href="https://github.com/jihunparkme/reon-site" target="_blank">Github</a>)</span></li>
+                                    <li>가까운 분의 창업 선물로 프로젝트 진행 <span class="comment">(<a href="https://github.com/jihunparkme/reon-site" target="_blank">Github</a>)</span></li>
                                     <li><a href="https://www.inflearn.com/roadmaps/373" target="_blank">Spring Roadmap</a> 및 실무를 통한 학습 내용 활용</li>
                                     <li>관심 있고 사용해 보고 싶었던 기술 적용</li>
                                     <li>Tech Stack.</li>
                                     <div>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Boot</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Security</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Data JPA</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">JPA</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">QueryDSL</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Thymeleaf</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">jQuery</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                     </div>
                                     <div>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">AWS EC2</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">AWS RDS</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">MariaDB</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Docker</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Nginx</span>
@@ -374,10 +383,10 @@
                                     <li>맞춤법 검사와 번역을 동시에 처리해주는 서비스</li>
                                     <li>Tech Stack.</li>
                                     <div>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Boot</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Thymeleaf</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">jQuery</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Redis</span>
                                     </div>
@@ -395,14 +404,14 @@
                                     <li>Tech Stack.</li>
                                     <div>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Boot</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Data JPA</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">JPA</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">QueryDSL</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Mockito</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">MockMvc</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">Thymeleaf</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Javascript</span>
+                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">jQuery</span>
                                         <span style="font-weight:400" class="mr-1 badge badge-secondary">MySQL</span>
                                     </div>
@@ -497,7 +506,7 @@
                                   <ul>
                                     <li>토비의 스프링 부트 - 이해와 원리 <span class="tag_2">(11.1h) <a href="https://www.inflearn.com/certificate/198538-329974-12012978" target="_blank">수료증</a></span></li>
                                     <li>스프링 부트 - 핵심 원리와 활용 <span class="tag_2">(15.8h) <a href="https://www.inflearn.com/certificate/198538-330459-11764231" target="_blank">수료증</a></span></li>
-                                    <li>Spring Boot 기반으로 개발하는 Spring Batch <span class="tag_2">(45.2h) <a href="https://www.inflearn.com/certificate/198538-327744-11542925" target="_blank">수료증</a></span></li>
+                                    <li>SpringBoot 기반으로 개발하는 Spring Batch <span class="tag_2">(45.2h) <a href="https://www.inflearn.com/certificate/198538-327744-11542925" target="_blank">수료증</a></span></li>
                                     <li>스프링 핵심 원리 - 고급편 <span class="tag_2">(16.6h) <a href="https://www.inflearn.com/certificate/198538-327901-4778174" target="_blank">수료증</a></span></li>
                                     <li>스프링 DB 2편 - 데이터 접근 활용 기술 <span class="tag_2">(14h) <a href="https://www.inflearn.com/certificate/198538-328990-10783986" target="_blank">수료증</a></span></li>
                                     <li>스프링 DB 1편 - 데이터 접근 핵심 원리 <span class="tag_2">(10.1h) <a href="https://www.inflearn.com/certificate/198538-328723-10700516" target="_blank">수료증</a></span></li>
@@ -563,8 +572,8 @@
                         <div class="col-sm-9 sk_list">
                             <ul>
                                 <li><span class="font-bold">Java</span>, Python</li>
-                                <li><span class="font-bold">Spring Boot</span>, <span class="font-bold">Spring MVC</span>, <span class="font-bold">Spring Batch</span>, Spring Data JPA</li>
-                                <li><span class="font-bold">Mybatis</span>, JPA, QueryDSL</li>
+                                <li><span class="font-bold">SpringBoot</span>, <span class="font-bold">Spring MVC</span>, <span class="font-bold">Spring Batch</span>, Spring Security, Spring Data JPA</li>
+                                <li><span class="font-bold">MyBatis</span>, JPA, QueryDSL</li>
                                 <li>Junit5, Mockito</li>
                                 <li>Gradle</li>
                             </ul>
@@ -574,11 +583,11 @@
                         <div class="col-sm-3 sk_title"><h3 style="text-transform: none;">DevOps</h3></div>
                         <div class="col-sm-9 sk_list">
                             <ul>
-                                <li>AWS-EC2, AWS-RDS</li>
-                                <li><span class="font-bold">Oracle</span>, <span class="font-bold">MySQL</span>, MS-SQL, MongoDB, Redis</li>                                
+                                <li>AWS-EC2, RDS</li>
+                                <li><span class="font-bold">Oracle</span>, <span class="font-bold">MySQL</span>, MariaDB, MS-SQL, MongoDB, Redis</li>                                
                                 <li><span class="font-bold">Jenkins</span></li>                                
                                 <li>Docker</li>
-                                <li>Nginx, Tomcat</li>                                
+                                <li>Nginx</li>                                
                                 <li><span class="font-bold">Linux</span>, Ubuntu</li> 
                             </ul>
                         </div>
@@ -587,7 +596,7 @@
                         <div class="col-sm-3 sk_title"><h3 style="text-transform: none;">Frontend</h3></div>
                         <div class="col-sm-9 sk_list">
                             <ul>
-                                <li>HTML5, CSS3, JavaScript, JSP, Thymeleaf</li>
+                                <li>HTML5, CSS3, JS(ES6), JSP, Thymeleaf</li>
                                 <li>jQuery, JSTL</li>
                                 <li>Vue.js</li>
                             </ul>
