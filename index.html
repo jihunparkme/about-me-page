@@ -95,13 +95,13 @@
                             </div>
                             <ul>
                                 <li><strong>나의 11번가</strong> 영역 서비스 개발/운영 및 개선.</li>
-                                <li>레거시 코드 리팩토링으로 유지보수를 위한 <strong>코드 분석 시간 단축</strong>. <span class="comment">(거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)<span></li>
-                                <li>DB 탈중앙화 대비 분리 대상 테이블 참조 쿼리 분리 및 이관. <span class="comment">(약 10% 이관 중)</span></li>
+                                <li><strong>레거시 코드 리팩토링</strong>으로 유지보수를 위한 <strong>코드 분석 시간 단축</strong>. <span class="comment">(거대 메소드/API 분리 및 이관, 중복/미사용 코드 제거 ··)<span></li>
+                                <li>DB 탈중앙화 대비 분리 대상 테이블 참조 쿼리 분리 및 이관.</li>
                                 <ul>
-                                    <li><strong>조회 성능 이슈 방지</strong>를 위해 이관 전/후 비교 로직 <strong>비동기 처리</strong> <span class="comment">(<a href="https://11st-tech.github.io/2024/01/04/completablefuture/" target="_blank">Java CompletableFuture로 비동기 적용하기</a>)</span></li>
-                                    <li><strong>Functional Interfaces 활용</strong> 이관 전/후 결과 비교</li>
+                                    <li>이관 결과 비교 로직을 <strong>비동기 처리</strong>로 처리하여 <strong>조회 성능 이슈 방지</strong> <span class="comment">(<a href="https://11st-tech.github.io/2024/01/04/completablefuture/" target="_blank">Java CompletableFuture로 비동기 적용하기</a>)</span></li>
+                                    <li>이관을 위한 <strong>유틸 클래스</strong>를 제공하여 이관 작업이 <strong>이전보다 간결하고 빠르게</strong> 진행 <span class="comment">(Functional Interface 활용)</span></li>                             
                                 </ul>
-                                <li>로그 모니터링, 슬랙 알림을 통한 <strong>이슈 대응과 에러 개선</strong>.</li>
+                                <li>로그 모니터링, 슬랙 알람을 통한 <strong>이슈 대응과 에러 개선</strong>.</li>
                                 <li><strong>Wiki를 활용</strong>한 팀 내 업무 효율성 향상. <span class="comment">(업무 가이드, 히스토리 기록 ··)</span></li>
                                 <li>Tech Stack.</li>
                                 <div>
@@ -123,7 +123,7 @@
                                 <li>AC+ 후 가입 프로세스 개발. <span class="comment">(전년 대비 <strong>연동률 12.3% 증가</strong>, <strong>0.2억 추가 수익</strong>)</span></li>
                                 <li>AC+ 관련 배치 개발.</li>
                                 <ul>
-                                    <li>배송 완료 이후 <strong>자동 연동</strong>, 구매 확정 배치</li>
+                                    <li>배송 완료 이후 자동 연동, 구매 확정 배치</li>
                                     <li>연동 해제 및 주문 취소 배치 <span class="comment">(미개봉 취소/반품 상품 출고 시 <strong>연동 실패 이슈 개선</strong>)</span></li>
                                     <li>수기 연동 요청 건 데이터 업데이트 배치 <span class="comment">(ACC <strong>데이터 정합성 문제 개선</strong>)</span></li>
                                 </ul>
@@ -146,8 +146,8 @@
                             </div>
                             <ul>
                                 <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. <span class="comment">(오픈 이후 6개월 <strong>주문 건수 3.5만 </strong>건, 주문 대비 <strong>5% 발급</strong> 요청)</span></li><!-- 23.03 오픈 23.11 기준 -->
-                                <li>무분별한 외부 API 요청을 막기 위해 <strong>Redis를 적용한 NFT 발급 요청 시도 횟수 제한.</strong></li>
-                                <li>다량 주문 건 <strong>NFT 보증서 발급 배치</strong> 개발.</li>
+                                <li><strong>Redis를 활용</strong>하여 NFT 발급 요청 시도 횟수를 제한하고 <strong>무분별한 외부 API 요청 방어</strong></li>
+                                <li>다량 주문 건 <strong>NFT 발급 배치</strong> 개발.</li>
                                 <li><a href="https://docs.klipwallet.com/rest-api/rest-api-card-minting" target="_blank">Klip Partners</a> / <a href="https://m.uptn.io/" target="_blank">UPTN Station</a> API 연동.</li>
                                 <li>Tech Stack.</li>
                                 <div>
@@ -176,12 +176,12 @@
 
                                 <li>팀 배치 서버 <strong>무중단 배포</strong>로 개선. <span class="comment">(<a href="https://11st-tech.github.io/2023/12/11/spring-batch-non-stop-deploy/" target="_blank">심볼릭 링크로 스프링 배치 무중단 배포하기</a>)</span></li>
 
-                                <li><strong>업무 효율성 향상</strong>을 위해 여러 절차가 필요한 <strong>반복 업무를 API로 간소화</strong></li>
+                                <li>여러 절차가 필요한 <strong>반복 업무를 API로 간소화</strong>하여 업무 효율성 향상</li>
                                 <!-- > 외부 API 호출 로그 조회 -->
                                 <!-- > 구매확정 상태 전환 API 개발 -->
                                 <!-- > 프로퍼티 조회, 업데이트, 추가 API -->
 
-                                <li><strong>코드 오염</strong>을 막기 위해 예외 처리 목적으로 관리되던 문자열 코드 대신 <strong>예외 관리 테이블</strong> 활용.</li><!--  -->
+                                <li><strong>예외 관리 테이블</strong>을 활용하여 예외 처리 목적으로 추가되던 조건문을 제거하고 <strong>코드 오염 방지</strong></li>
                                 <!-- ex. 특정 상품번호/판매자번호/카테고리번호.. 에 해당하는 문자열 코드들을 테이블 조회로(order-info, batch-11st) -->
 
                                 <li>Tech Stack.</li>
@@ -219,7 +219,7 @@
                                 <li><span class="font-bold">통합검색 쿼리 성능 개선</span>으로 검색 범위 확장 <span class="comment">(불필요한 조인 제거 및 검색 필터 확장)</span></li>
                                 <li>Legal / IP 사이트 중복 게시물 단일화로 <span class="font-bold">데이터 관리 효율성 개선</span></li>
                                 <li><span class="font-bold">프로젝트 레거시 코드 개선</span>을 위해 Clean Code, 리팩토링 학습 및 적용/공유</li>
-                                <li>팀 내 <strong>IntelliJ 사용을 추진</strong>하여 개발 생산성 향상 <span class="comment">(<a href="https://data-make.tistory.com/723" target="_blank">인트라넷 환경에서 IntelliJ 설정</a>)</span></li>
+                                <li>팀 내 <strong>IntelliJ 사용을 추진</strong>하여 개발 생산성 향상 <span class="comment">(<a href="https://data-make.tistory.com/723" target="_blank">인트라넷 환경에서 IntelliJ 설정 하기</a>)</span></li>
                                 <li>Tech Stack.</li>
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
