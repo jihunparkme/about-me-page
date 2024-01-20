@@ -11516,7 +11516,7 @@ section.resume-section .resume-section-content {
   margin-bottom: 0.2rem;
 }
 .company-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11524,6 +11524,9 @@ section.resume-section .resume-section-content {
   line-height: 1.2;
   color: #343a40;
   margin-right: 0.3rem;
+}
+.project-title {
+  font-size: 1.5rem;
 }
 .company-title-tag {
   color: #6c757d;
@@ -11592,7 +11595,7 @@ section.resume-section .resume-section-content {
 .comment {
   font-size: 0.9em;
 }
-.blockquote {
+.blockquote-custom {
   margin: 0;
   padding: 0 1em;
   color: #656d76;
@@ -11600,6 +11603,9 @@ section.resume-section .resume-section-content {
   background: none;
   text-align: inherit;
   font-size: 1.15rem;
+}
+.blockquote-custom ul {
+  padding-left: 1rem;
 }
 .text-name {
   --bs-text-opacity: 1;
