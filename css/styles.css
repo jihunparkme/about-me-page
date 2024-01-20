@@ -11528,6 +11528,9 @@ section.resume-section .resume-section-content {
 .project-title {
   font-size: 1.5rem;
 }
+.project-blockquote {
+  margin-left: 0.4rem !important;
+}
 .company-title-tag {
   color: #6c757d;
   font-style: italic;
