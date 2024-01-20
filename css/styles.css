@@ -11394,7 +11394,7 @@ p.lead {
   width: 1.5rem;
   background-color: #495057;
   color: #fff;
-  border-radius: 100%;
+/*  border-radius: 100%;*/
   font-size: 1rem;
   margin-right: 0.5rem;
 }
@@ -11439,8 +11439,12 @@ section.resume-section .resume-section-content {
 }
 .higtlight-white {
   border-radius: 7px;
-  background: linear-gradient(to top, #2E5984 100%, transparent 100%);
+  background: #2E5984;
   color: white;
+}
+.higtlight-white span {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 .font-color-green {
   color: #009000;
@@ -11577,4 +11581,17 @@ section.resume-section .resume-section-content {
 }
 .comment {
   font-size: 0.9em;
+}
+.blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #656d76;
+  border-left: 0.25em solid #d0d7de;
+  background: none;
+  text-align: inherit;
+  font-size: 1.15rem;
+}
+.text-name {
+  --bs-text-opacity: 1;
+  color: #2E5984 !important;
 }
