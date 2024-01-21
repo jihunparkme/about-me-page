@@ -137,6 +137,7 @@
                                 <ul>                                                                             
                                     <li>Functional Interface를 활용한 <strong>유틸 클래스 개발</strong>.</li>
                                     <li>Java CompletableFuture를 활용한 이관 검증 <strong>비동기 처리</strong>.</li>
+                                    <li>작업 단위별로 <strong>스위치를 적용</strong>하고 <strong>슬랙 알람 구성</strong>을 통한 모니터링</li>
                                 </ul>
 
                                 <h5>Result.</h5>
@@ -165,7 +166,7 @@
                             <div class="blockquote-custom project-blockquote mb-4">
 
                                 <h5>Description.</h5>
-                                <p>애플 직매입 운영을 위한 AppleCare+(이하 AC+) 연동 서비스를 개발하였습니다. <span class="comment">(<a href="https://applecareconnect.apple.com/api-docs/accuat/html/WSReference.html" target="_blank">AppleCare Connect API</a>)</span></p>
+                                <p>애플 직매입 운영에 따른 클레임 서비스 및 AppleCare+(이하 AC+) 연동 서비스를 개발하였습니다.</p>
 
                                 <h5>What did I do.</h5>
                                 <ul>
@@ -173,8 +174,9 @@
                                     <li>조건 부적합 상품 수기 연동 요청 건 연동 정보 업데이트 배치 개발. <span class="comment">(ACC <strong>데이터 정합성 문제 개선</strong>)</span></li>                                
                                     <li><strong>AC+ 동시 가입 서비스 개발</strong>. <span class="text-primary small-rem-left">2022.05. ~ 2022.06.</span></li>
                                     <ul>
-                                        <li>AC+ 연동 배치 개발.</li>
                                         <li>AC+ 주문 취소 및 연동 해제 배치 개발. <span class="comment">(미개봉 취소/반품 상품 재출고 시 <strong>연동 실패 이슈 개선</strong>)</span></li>
+                                        <li>AC+ 연동 배치 개발.</li>                                        
+                                        <li><a href="https://applecareconnect.apple.com/api-docs/accuat/html/WSReference.html" target="_blank">AppleCare Connect API</a> 연동</li>
                                     </ul>
                                 </ul>
 
@@ -202,29 +204,51 @@
 
                             <div class="mb-2">
                                 <span class="project-title lead mt-4 mb-4 font-color-black font-bold">OOAh luxe</span>
-                                <span class="text-primary small-rem-left">2023.01. ~ 2023.03.02.</span>
+                                <span class="text-primary small-rem-left">2023.01. ~ 2023.03.</span>
                             </div>
                             <div class="blockquote-custom project-blockquote mb-4">
+
+                                <h5>Description.</h5>
+                                <p><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 구축에 따른 클레임 서비스 및 NFT 보증서 페이지를 개발하였습니다.</p>
+
+                                <h5>What did I do.</h5>
                                 <ul>
-                                    <li><a href="https://m.11st.co.kr/page/luxury/home" target="_blank">OOAh luxe</a> 명품 전용 플랫폼 <strong>NFT 보증서 페이지</strong> 개발. <span class="comment">(오픈 이후 6개월간 <strong>주문 건수 3.5만 </strong>건, 주문 대비 <strong>5% NFT 발행</strong>)</span></li><!-- 23.03 오픈 23.11 기준 -->
-                                    <li><strong>Redis를 활용</strong>하여 NFT 발행 재시도 횟수를 제한하고 <strong>무분별한 외부 API 요청 방어</strong></li>
-                                    <li>다량 주문 건 <strong>NFT 발행 배치</strong> 개발.</li>
+                                    <li><strong>NFT 보증서 페이지 개발.</strong></li>
+                                    <li>Redis를 활용한 <strong>NFT 발행 재시도 횟수 제한.</strong></li>
+                                    <li>다량 주문 건 <strong>NFT 발행 배치 개발.</strong></li>
                                     <li><a href="https://docs.klipwallet.com/rest-api/rest-api-card-minting" target="_blank">Klip Partners</a> / <a href="https://m.uptn.io/" target="_blank">UPTN Station</a> API 연동.</li>
-                                    <li>Tech Stack.</li>
-                                    <div>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Redis</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">Vue.js</span>
-                                        <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
-                                    </div>
                                 </ul>
+
+                                <h5>Result.</h5>
+                                <ul>
+                                    <li>오픈 이후 6개월간 <strong>주문 건수 3.5만 </strong>건, 주문 대비 <strong>5% NFT 발행</strong></li><!-- 23.03 오픈 23.11 기준 -->
+                                    <li>NFT 발행 재시도 횟수 제한으로 민팅 실패 상황에도 <strong>무분별한 외부 API 요청 방어</strong></li>
+                                    <li>Redis 활용과 Redis Transaction을 다루기 위해 <strong>학습한 내용 정리 및 공유</strong></li>
+                                    <ul>
+                                        <li><span class="comment"><a href="https://data-make.tistory.com/754" target="_blank">Spring Boot + Redis 적용하기</a></span></li>
+                                        <li><span class="comment"><a href="https://data-make.tistory.com/757" target="_blank">Redis Transaction</a></span></li>
+                                    </ul>
+                                    <li>API 통신 과정에서 사용되는 RSA 암호화, KISA SEED CBC 암호화, JWT를 다루기 위해 <strong>학습한 내용 정리 및 공유</strong></li>
+                                    <ul>
+                                        <li><span class="comment"><a href="https://data-make.tistory.com/758" target="_blank">RSA Encryption/Decryption in JAVA</a></span></li>
+                                        <li><span class="comment"><a href="https://data-make.tistory.com/759" target="_blank">JAVA KISA SEED CBC 암/복호화</a></span></li>
+                                        <li><span class="comment"><a href="https://data-make.tistory.com/760" target="_blank">Using JWT(JSON Web Tokens) in Java</a></span></li>
+                                    </ul>
+                                </ul>
+
+                                <div>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Java</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">SpringBoot</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MyBatis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Oracle</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Redis</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Linux</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Jenkins</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JSP</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Vue.js</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">JavaScript</span>
+                                </div>
                             </div>
                             <div class="mb-2">
                                 <span class="project-title lead mt-4 mb-4 font-color-black font-bold">Improvement.</span>
