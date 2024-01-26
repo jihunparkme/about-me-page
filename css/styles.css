@@ -11568,7 +11568,7 @@ section.resume-section .resume-section-content {
 .answer {
   display: none;
   padding-bottom: 5px;
-  padding: 10px 25px;
+  padding: 0px 15px;
 }
 #faq-title {
   font-size: 25px;
@@ -11578,7 +11578,7 @@ section.resume-section .resume-section-content {
 }
 .question {
   font-size: 17px;
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 0px;
   cursor: pointer;
   border: none;
   outline: none;
@@ -11590,7 +11590,7 @@ section.resume-section .resume-section-content {
   color: #2962ff;
 }
 [id$="-toggle"] {
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .main-title {
   color: #17a2b8;
