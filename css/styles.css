@@ -11392,11 +11392,9 @@ p.lead {
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: #495057;
-  color: #fff;
-/*  border-radius: 100%;*/
   font-size: 1rem;
   margin-right: 0.5rem;
+  color: black;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
