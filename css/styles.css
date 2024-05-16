@@ -4477,7 +4477,7 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #2E5984;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
@@ -4496,9 +4496,9 @@ textarea.form-control-lg {
   color: #3030BE;
 }
 .navbar-dark .navbar-toggler {
-  color: rgba(60, 60, 276, 0.55);
-  border-color: rgba(60, 60, 276, 0.1);
-  background-color: #9292ff;
+  color: #2E5984;
+  border-color: #2E5984;
+  background-color: #2E5984;
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
