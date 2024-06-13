@@ -11557,6 +11557,10 @@ section.resume-section .resume-section-content {
     color: #fff;
     background-color: #6c757d;
 }
+.badge-dark {
+    color: #fff;
+    background-color: #343a40;
+}
 .mr-0-25 {
     margin-right: 0.25rem !important;
 }
@@ -11621,4 +11625,13 @@ section.resume-section .resume-section-content {
   line-height: 1.2;
   color: #343a40;
   font-size: 1.2rem;
+}
+.skill-1 {
+  color: #007bff;
+}
+.skill-2 {
+  color: #28a745;
+}
+.skill-3 {
+  color: #black;
 }
