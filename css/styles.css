@@ -11627,13 +11627,27 @@ section.resume-section .resume-section-content {
   font-size: 1.2rem;
 }
 .skill-1 {
-  color: #007bff;
+  font-weight: bold;
+}
+.badge-skill-1 {
+  color: #fff;
+  background-color: #000000;
 }
 .skill-2 {
-  color: #28a745;
+  font-weight: lighter;
+  color: #736F6E;
+}
+.badge-skill-2 {
+  color: #fff;
+  background-color: #736F6E;
 }
 .skill-3 {
-  color: #black;
+  font-weight: lighter;
+  color: #B6B6B4;
+}
+.badge-skill-3 {
+  color: #fff;
+  background-color: #B6B6B4;
 }
 .logo-11st {
   color: #FF0038; 
