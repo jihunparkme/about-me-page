@@ -11650,12 +11650,31 @@ section.resume-section .resume-section-content {
   background-color: #B6B6B4;
 }
 .logo-11st {
-  color: #FF0038; 
+  background: linear-gradient(to right, #FF5A2E, #FF0038, #FF00EF);
+  color: transparent;
+  -webkit-background-clip: text;
   margin-left: 0.5em; 
   font-size: 0.7em;
 }
+.color-11st {
+  background: linear-gradient(to right, #FF5A2E, #FF0038, #FF00EF);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+}
 .logo-kim-chang {
-  color: #623400; 
+  color: #542617; 
   margin-left: 0.5em; 
   font-size: 0.7em;
+}
+.color-kim-chang {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+  color: #542617; 
+}
+.color-kakao {
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
+  color: #FFEB00; 
 }
