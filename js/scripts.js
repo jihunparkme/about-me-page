@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    countWorkDay("11st-start-date", "11st-work-period");
+    countWorkDay("now-start-date", "now-work-period");
     countTotalWorkPeriod();
 });
 
