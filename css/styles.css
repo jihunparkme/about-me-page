@@ -11649,6 +11649,12 @@ section.resume-section .resume-section-content {
   color: #fff;
   background-color: #B6B6B4;
 }
+.logo-kakaopay {
+  color: black;
+  -webkit-background-clip: text;
+  margin-left: 0.5em; 
+  font-size: 0.7em;
+}
 .logo-11st {
   background: linear-gradient(to right, #FF5A2E, #FF0038, #FF00EF);
   color: transparent;
