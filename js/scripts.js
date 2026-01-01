@@ -47,7 +47,7 @@ function countWorkDay(id, target) {
     let year = parseInt(monthDiff(startDate, today) / 12);
     let month = monthDiff(startDate, today) % 12;
 
-    document.getElementById(target).innerText = getPeriodInnerTest(year, month);
+    document.getElementById(target).innerText = getPeriodInner(year, month);
 }
 
 function monthDiff(start, end) {
@@ -84,10 +84,11 @@ function countTotalWorkPeriod() {
     year += parseInt(month / 12);
     month = month % 12;
 
-    document.getElementById("total-work-period").innerText = "총 " + getPeriodInnerTest(year, month);
+    document.getElementById("total-work-period").innerText = "총 " + getPeriodInner(year, month);
+    document.getElementById("total-work-year").innerText = "총 " + getPeriodInnerYear(year);
 }
 
-function getPeriodInnerTest(year, month) {
+function getPeriodInner(year, month) {
     let innerText = '';
     if (year > 0) {
         innerText += year + "년 ";
@@ -95,6 +96,10 @@ function getPeriodInnerTest(year, month) {
     innerText += month + "개월";
 
     return innerText;
+}
+
+function getPeriodInnerYear(year) {
+    return year + "년 차";
 }
 
 
