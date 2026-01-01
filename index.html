@@ -121,6 +121,7 @@
                             <ul>
                                 <li><strong>카카오페이 정산 플랫폼</strong> 백엔드 개발/운영</li>
                                 <li>원장/통계 데이터를 MySQL에서 <strong>MongoDB로 이관</strong></li>
+                                <li>버전 업그레이드 및 최신 문법 적용(JDK 21, SpringBoot 3)</li>
 
                                 <li>Skill Keywords</li>
                                 <div>
@@ -245,25 +246,40 @@
                                 </div>
                             </div> -->
                             <div class="mb-2">
-                                <span class="project-title lead mt-4 mb-4 font-color-black font-bold">휴일 변경에 따른 지급 데이터 자동 업데이트.</span><span class="logo-kakaopay">Kakao<strong>pay</strong></span>
+                                <span class="project-title lead mt-4 mb-4 font-color-black font-bold">휴일 변경에 따른 지급 데이터 자동 업데이트.</span><span class="logo-kakaopay"><span style="color: #EDD713;">Kakao</span><strong>pay</strong></span>
                             </div>
                             <p class="text-primary small-rem">2024.04. ~ 2024.10</p>
                             <div class="blockquote-custom project-blockquote mb-4">
                                 <h5>Description.</h5>
-                                <p>a</p>
+                                <p>임시공휴일 지정이나 휴일 변동 시 발생하는 <strong>정산·지급일 변경 업무를 자동화</strong>하였습니다.<br/>
+                                기존 기획자와 개발자가 여러 단계를 거쳐 수백 개의 쿼리를 실행하며 수작업으로 대응했지만, <strong>클릭 한 번</strong>으로 가능하게 되었습니다.</p>
 
                                 <h5>What did I do.</h5>
                                 <ul>
-                                    <li>a</li>
+                                    <li>정산 스케줄 및 지급 데이터 업데이트 기능을 버튼 <strong>클릭 한 번</strong>으로 처리할 수 있도록 <strong>어드민 고도화</strong></li>
+                                    <li>휴일/스케줄 태스크 수행부터 룰 캐시 초기화, RM 데이터 연동, 지급 데이터 업데이트 등 <strong>전 과정을 파이프라인으로 구축</strong></li>
+                                    <li>슬랙 연동을 통한 채널별 <strong>처리 결과 알림</strong> 및 <strong>결과 파일 다운로드 기능</strong> 개발</li>
                                 </ul>
 
                                 <h5>Result.</h5>
                                 <ul>
-                                    <li>a</li>
+                                    <li>10단계 이상의 복잡한 수작업을 버튼 클릭 한 번으로 간소화하여 <strong>운영 효율성 극대화</strong></li>
+                                    <li>기존 4~5일 소요되던 작업 시간을 단 몇 시간 이내로 단축하여 <strong>처리 시간 90% 절감</strong></li>
+                                    <li>500개 이상의 수기 쿼리 작성 프로세스를 자동화하여 <strong>휴먼 에러 발생 가능성 제거</strong></li>
+                                    <li>파이프라인 구축을 위해 학습한 <strong>Kafka Streams 관련 기술 공유</strong></li>
+                                    <ul>
+                                        <li><a href="https://data-make.tistory.com/802" target="_blank">정산 데이터, 이제 스트리밍으로 즐기세요! (feat. Kafka streams) 1편</a></li>
+                                        <li><a href="https://data-make.tistory.com/803" target="_blank">정산 데이터, 이제 스트리밍으로 즐기세요! (feat. Kafka streams) 2편</a></li>
+                                    </ul>
                                 </ul>
 
                                 <div>
                                     <span style="font-weight:400" class="mr-1 badge badge-secondary">Kotlin</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Boot</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Spring Batch</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Kafka</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Kafka Streams</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">MongoDB</span>
                                 </div>
                             </div>
 
