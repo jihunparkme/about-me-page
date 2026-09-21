@@ -680,27 +680,65 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5 text-none-transform font-color-black main-title">Side Project.</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-1 text-none-transform"> walking-festival.</h3>
+                            <div class="blockquote-custom project-blockquote mb-4">
+                                <h5>Description.</h5>
+                                <p>
+                                    걷기 축제 운영 스태프로 참여하며, 종이 도장판·안내문과 고가의 외주 걷기 인증 앱에 의존하던<br/>기존 행사 운영 방식의 비효율을 개선하기 위해 QR 기반 웹앱 도장판/추첨 서비스를 기획 및 개발
+                                    (<a href="https://github.com/jihunparkme/walking-festival" target="_blank">GitHub</a>)<br>
+                               </p>
+
+                                <h5>What did I do.</h5>
+                                <ul>
+                                    <li>참여자 1,200명, 25개 이상의 부스 규모 행사를 지원하는 QR 인증 기반 부스/걷기 인증 및 추첨 시스템 설계·개발</li>
+                                    <li>앱 설치 없이 접근 가능한 웹앱(SPA)으로 구현해 참여자 접근 장벽 제거</li>
+                                    <li>이름+전화번호 기반 간편 로그인, 도장판, 관리자(부스·참여자 관리) 페이지 개발</li>
+                                </ul>
+
+                                <h5>Result.</h5>
+                                <ul>
+                                    <li>참여자마다 나눠주던 종이 도장판/안내문을 디지털로 대체해 2,500부 이상의 종이 절약, 친환경적 행사 운영 실현</li>
+                                    <li>기존 유료 걷기 인증 앱 도입 비용을 자체 개발로 대체하여 운영 비용 절감</li>
+                                    <li>QR 스캔 한 번으로 부스·걷기 인증이 동시에 가능해 참여자 대기시간·혼선 감소 및 만족도 향상</li>
+                                    <li>관리자 페이지를 통한 실시간 참여 현황 파악으로 운영진 의사결정 속도 향상 </li>
+                                </ul>
+
+                                <div>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">React</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Vite</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">CSS</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Supabase (PostgreSQL)</span>
+                                    <span style="font-weight:400" class="mr-1 badge badge-secondary">Vercel</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2026.07. ~ 2026.09.</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
                                 <h3 class="mb-1 text-none-transform">aymc-high-school-class.</h3>
                                 <div class="blockquote-custom project-blockquote mb-4">
                                     <h5>Description.</h5>
                                     <p>
-                                        교회 고등부 담임 교사를 맡으면서 수기·파편화된 문서로 관리되던<br/>비효율적인 학생 출석/관리 프로세스를 개선하기 위해 관리 시스템 기획 및 개발
+                                        교회 고등부 담임 교사로 활동하며 학생 180명, 16개 반, 교사 41명 규모에서 종이 출석부와<br/>파편화된 문서로 관리하던 비효율을 개선하기 위해 웹 기반 학생 관리 시스템을 기획 및 개발
                                         (<a href="https://github.com/jihunparkme/aymc-high-school-class" target="_blank">GitHub</a>)<br>
                                    </p>
 
                                     <h5>What did I do.</h5>
                                     <ul>
-                                        <li>매주 16장 이상 소모되던 출석부 종이와 파편화된 데이터를 디지털화하여 관리 운영 효율 개선</li>
+                                        <li>매주 반별로 배부되던 출결·특이사항 관리 종이(16장/주)를 전면 디지털화하여 교사 업무 부담 및 관리 운영 효율 개선</li>
+                                        <li>앱 설치 없이 모바일 브라우저로 즉시 접근 가능한 웹앱으로 설계하여 접근성과 사용 편의성 확보</li>
+                                        <li>학년-반-학생 계층 구조와 주차별 출결/기도제목 데이터를 설계하고 Supabase 기반 실시간 DB로 구축</li>
                                         <li>실생활의 불편함을 직접 서비스로 기획·설계·개발하여 해결</li>
-                                        <li>Vibe Coding 활용으로 개발 생산성 향상</li>
                                     </ul>
 
                                     <h5>Result.</h5>
                                     <ul>
                                         <li>휴대폰으로 간편하게 출석 및 특이사항을 기록할 수 있게 되어 작성 참여도와 기록 누락률 개선</li>
-                                        <li>연간 약 800장 이상의 종이 절약을 통한 친환경적 프로세스 구축</li>
-                                        <li>데이터가 한 곳에 축적되면서 교사 간 학생 정보 공유가 실시간으로 이루어져 협업 효율성 향상</li>
+                                        <li>연간 약 800장 이상의 종이 절약을 통한 친환경적 업무 프로세스 구축</li>
+                                        <li>데이터가 한 곳에 축적되면서 41명 교사 간 학생 정보(출결, 특이사항, 기도제목)가 실시간 공유되어 협업 효율성 향상</li>
+                                        <li>종이 관리 시 발생하던 분실·훼손 리스크를 제거하고, 과거 기록 조회가 즉시 가능해져 학생 관리 연속성 확보</li>
                                     </ul>
 
                                     <div>
